@@ -1,12 +1,9 @@
 import React from "react";
-import { Button } from "./index.jsx";
+import { Button } from ".";
 
 export default {
 	title: "Atoms/Button",
 	component: Button,
-	argTypes: {
-		backgroundColor: { control: "color" },
-	},
 };
 
 const Template = (args) => <Button {...args} />;
@@ -14,28 +11,37 @@ const Template = (args) => <Button {...args} />;
 export const Primary = Template.bind({});
 
 Primary.args = {
-	primary: true,
+	mode: "primary",
 	label: "Button",
+	size: "medium",
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
+	mode: "secondary",
 	label: "Button",
+	size: "medium",
 };
 
 export const Large = Template.bind({});
 Large.args = {
 	size: "large",
-	label: "Button",
+	label: "Large",
 };
 
 export const Small = Template.bind({});
 Small.args = {
 	size: "small",
-	label: "Button",
+	label: "Small",
+};
+
+export const Medium = Template.bind({});
+Medium.args = {
+	size: "medium",
+	label: "Medium",
 };
 
 export const Test = Template.bind({});
 Test.args = {
-	label: "Hello",
+	label: "Get Started!",
 };

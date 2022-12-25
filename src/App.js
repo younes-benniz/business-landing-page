@@ -1,4 +1,3 @@
-import "bootstrap/dist/css/bootstrap.css";
 import "./components/_settings/base.scss";
 import { Button } from "./components/atoms/Button";
 function App() {

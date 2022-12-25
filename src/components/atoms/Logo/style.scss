@@ -1,0 +1,24 @@
+@import "../../_settings/variables";
+
+.logo-wrapper {
+	.logo {
+		display: flex;
+		align-items: center;
+		font-family: $primary-font;
+		text-decoration: none;
+		text-transform: capitalize;
+		color: $white-text;
+		&.logo-medium {
+			font-size: 26px;
+		}
+		&.logo-large {
+			font-size: 32px;
+		}
+		.logo-img {
+			background-repeat: no-repeat;
+			width: 90px;
+			max-width: 100%;
+			height: auto;
+		}
+	}
+}
