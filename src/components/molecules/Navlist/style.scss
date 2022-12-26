@@ -1,0 +1,10 @@
+@import "../../_settings/variables";
+
+.nav-list {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	max-width: 100%;
+	list-style: none;
+	// .nav-item { }
+}

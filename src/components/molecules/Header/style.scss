@@ -1,0 +1,22 @@
+@import "../../_settings/variables";
+
+.header {
+	background-color: $primary-blue;
+	.header-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 70px;
+		.logo-wrapper {
+			flex-basis: 20%;
+		}
+		.menu {
+			flex-basis: 50%;
+		}
+		.actions {
+			flex-basis: 15%;
+			display: flex;
+			justify-content: center;
+		}
+	}
+}

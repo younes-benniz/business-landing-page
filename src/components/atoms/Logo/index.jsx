@@ -4,12 +4,10 @@ import "./style.scss";
 
 export const Logo = ({ brand, size, link, imgSrc, hasImg, hasTxt, ...props }) => {
 	return (
-		<div className="logo-wrapper">
-			<a href={link} className={`logo logo-${size}`} {...props}>
-				{hasImg && <img className="logo-img" src={imgSrc} alt={brand + "-logo"} />}
-				{hasTxt && brand}
-			</a>
-		</div>
+		<a href={link} className={`logo logo-${size}`} {...props}>
+			{hasImg && <img className="logo-img" src={imgSrc} alt={brand + "-logo"} />}
+			{hasTxt && brand}
+		</a>
 	);
 };
 
@@ -24,8 +22,9 @@ Logo.propTypes = {
 };
 
 Logo.defaultProps = {
-	brand: "business",
+	brand: "TechSio",
 	size: "large",
+	imgSrc: process.env.PUBLIC_URL + "/robot.svg",
 	link: "#",
 	hasImg: false,
 	hasTxt: true,
