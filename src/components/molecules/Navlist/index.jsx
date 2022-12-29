@@ -18,3 +18,7 @@ export const Navlist = ({ items, ...props }) => {
 Navlist.propTypes = {
 	items: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
+
+Navlist.defaultProps = {
+	items: ["Home", "contact", "features", "about", "projects", "pricing"],
+};

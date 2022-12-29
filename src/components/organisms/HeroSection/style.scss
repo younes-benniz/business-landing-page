@@ -1,0 +1,31 @@
+@import "../../_settings/variables";
+
+.hero-section {
+	// width: 100vw;
+	.hero-wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		width: 100%;
+		.left {
+			.hero-title {
+				font-family: $primary-font;
+				font-size: 46px;
+				font-weight: 700;
+				line-height: 120%;
+				letter-spacing: -0.01em;
+			}
+			.hero-description {
+			}
+			.hero-actions {
+			}
+		}
+		.right {
+			.hero-image-wrapper {
+				.hero-image {
+					width: 500px;
+				}
+			}
+		}
+	}
+}

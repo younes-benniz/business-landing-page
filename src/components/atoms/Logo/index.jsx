@@ -26,6 +26,6 @@ Logo.defaultProps = {
 	size: "large",
 	imgSrc: process.env.PUBLIC_URL + "/robot.svg",
 	link: "#",
-	hasImg: false,
+	hasImg: true,
 	hasTxt: true,
 };
