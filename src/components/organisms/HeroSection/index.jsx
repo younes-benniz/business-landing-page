@@ -7,11 +7,11 @@ import "./style.scss";
 export const HeroSection = ({ heroImg, title, description, ...props }) => {
 	return (
 		<section className="hero-section">
-			<div class="hero-wrapper">
+			<div className="hero-wrapper">
 				<div className="left">
-					<h1 class="hero-title">{title}</h1>
+					<h1 className="hero-title">{title}</h1>
 					<p className="hero-description">{description}</p>
-					<div class="hero-actions">
+					<div className="hero-actions">
 						<Button mode="secondary" size="extra-large" />
 
 						<SvgIcon size="medium" />

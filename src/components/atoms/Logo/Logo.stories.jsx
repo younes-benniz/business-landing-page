@@ -13,5 +13,5 @@ export const logo = Template.bind({});
 logo.args = {
 	brand: "agency",
 	hasImg: true,
-	imgSrc: process.env.PUBLIC_URL + "/robot.svg",
+	imgSrc: "/robot.svg",
 };

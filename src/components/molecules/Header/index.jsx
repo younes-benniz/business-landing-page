@@ -24,7 +24,7 @@ export const Header = ({ logo, navlist, button, ...props }) => {
 };
 
 Header.propTypes = {
-	logo: PropTypes.element.isRequired,
-	navlist: PropTypes.element.isRequired,
+	logo: PropTypes.element,
+	navlist: PropTypes.element,
 	button: PropTypes.element,
 };
