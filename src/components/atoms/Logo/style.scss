@@ -4,15 +4,24 @@
 	position: relative;
 	display: flex;
 	align-items: center;
-	font-family: $primary-font;
 	text-decoration: none;
-	text-transform: capitalize;
-	color: $white-text;
+	padding-bottom: 15px;
+	.brand-name {
+		font-family: $primary-font;
+		text-transform: capitalize;
+		color: $white-text;
+		font-weight: 500;
+		padding-top: 10px;
+	}
 	&.logo-medium {
-		font-size: 26px;
+		.brand-name {
+			font-size: 26px;
+		}
 	}
 	&.logo-large {
-		font-size: 30px;
+		.brand-name {
+			font-size: 30px;
+		}
 	}
 	.logo-img {
 		width: 80px;

@@ -9,21 +9,16 @@ export const HeroSection = ({ heroImg, title, description, ...props }) => {
 		<section className="hero-section">
 			<div class="hero-wrapper">
 				<div className="left">
-					<h1 class="hero-title">
-						{title}
-						<span class="hero-title-span">Powered by AI</span>
-					</h1>
+					<h1 class="hero-title">{title}</h1>
 					<p className="hero-description">{description}</p>
 					<div class="hero-actions">
-						{/* Get started button */}
-						<Button />
-						{/* Watch video button with icon */}
-						<SvgIcon />
+						<Button mode="secondary" size="extra-large" />
+
+						<SvgIcon size="medium" />
 					</div>
 				</div>
 				<div className="right">
 					<div className="hero-image-wrapper">
-						{/* Hero image */}
 						<img src={heroImg} className="hero-image" alt="vido-icon" />
 					</div>
 				</div>

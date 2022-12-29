@@ -17,13 +17,13 @@ export const Button = ({ mode, backgroundColor, size, label, ...props }) => {
 Button.propTypes = {
 	mode: PropTypes.oneOf(["primary", "secondary"]),
 	backgroundColor: PropTypes.string,
-	size: PropTypes.oneOf(["small", "medium", "large"]),
+	size: PropTypes.oneOf(["small", "medium", "large", "extra-large"]),
 	label: PropTypes.string,
 	onClick: PropTypes.func,
 };
 
 Button.defaultProps = {
 	mode: "primary",
-	label: "Get Started!",
+	label: "Get Started !",
 	size: "large",
 };

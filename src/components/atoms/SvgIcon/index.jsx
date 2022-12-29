@@ -37,6 +37,6 @@ SvgIcon.defaultProps = {
 	isLink: true,
 	link: "/#",
 	svgSrc: process.env.PUBLIC_URL + "/video-stream.svg",
-	size: "medium",
+	size: "large",
 	text: "Watch video!",
 };
