@@ -27,7 +27,7 @@ SvgIcon.propTypes = {
 	isLink: PropTypes.bool,
 	svgSrc: PropTypes.string,
 	link: PropTypes.string,
-	size: PropTypes.oneOf(["small", "medium", "large"]),
+	size: PropTypes.oneOf(["x-small", "small", "medium", "large"]),
 	text: PropTypes.string,
 	onClick: PropTypes.func,
 };

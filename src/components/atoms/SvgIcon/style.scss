@@ -11,6 +11,9 @@
 	.icon {
 		height: auto;
 		margin-right: 4px;
+		&.icon-x-small {
+			width: 30px;
+		}
 		&.icon-small {
 			width: 40px;
 		}
@@ -29,6 +32,9 @@
 		cursor: pointer;
 		user-select: none;
 		text-decoration: none;
+		&.icon-text-x-small {
+			font-size: 14px;
+		}
 		&.icon-text-small {
 			font-size: 16px;
 		}

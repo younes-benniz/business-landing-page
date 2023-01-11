@@ -29,19 +29,19 @@ export const TeamSection = ({ ...props }) => {
 								hasText={false}
 								isLink={true}
 								svgSrc={process.env.PUBLIC_URL + "/email.svg"}
-								size="small"
+								size="x-small"
 							/>
 							<SvgIcon
 								hasText={false}
 								isLink={true}
 								svgSrc={process.env.PUBLIC_URL + "/linkedin.svg"}
-								size="small"
+								size="x-small"
 							/>
 							<SvgIcon
 								hasText={false}
 								isLink={true}
 								svgSrc={process.env.PUBLIC_URL + "/twitter.svg"}
-								size="small"
+								size="x-small"
 							/>
 						</div>
 					</div>
