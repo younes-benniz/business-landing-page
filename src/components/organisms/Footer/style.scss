@@ -1,0 +1,23 @@
+@import "../../_settings/variables";
+
+.footer {
+    color: $white;
+    background-color: $primary-blue;
+
+    .columns {
+        display: flex;
+        justify-content: space-between;
+        width: 75%;
+        margin: 0 auto;
+        padding: 40px 20px;
+    }
+
+    .copyright {
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+        justify-content: space-between;
+        background-color: $purple-200;
+        padding: 25px 5px;
+    }
+}
