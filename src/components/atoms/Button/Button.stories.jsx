@@ -25,7 +25,7 @@ Secondary.args = {
 
 export const Large = Template.bind({});
 Large.args = {
-	size: "la23pxrge",
+	size: "large",
 	label: "Large",
 };
 

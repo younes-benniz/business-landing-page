@@ -12,4 +12,5 @@ export const navlist = Template.bind({});
 
 navlist.args = {
 	items: ["Home", "contact", "features", "about", "projects"],
+	style: { left: "-100%" },
 };

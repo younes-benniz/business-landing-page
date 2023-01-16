@@ -6,6 +6,7 @@
 	align-items: center;
 	text-decoration: none;
 	padding-bottom: 15px;
+
 	.brand-name {
 		font-family: $primary-font;
 		text-transform: capitalize;
@@ -13,16 +14,29 @@
 		font-weight: 500;
 		padding-top: 10px;
 	}
+
+	&.logo-small {
+		.brand-name {
+			font-size: 22px;
+		}
+
+		.logo-img {
+			width: 40px;
+		}
+	}
+
 	&.logo-medium {
 		.brand-name {
 			font-size: 26px;
 		}
 	}
+
 	&.logo-large {
 		.brand-name {
 			font-size: 30px;
 		}
 	}
+
 	.logo-img {
 		width: 80px;
 		height: 60px;

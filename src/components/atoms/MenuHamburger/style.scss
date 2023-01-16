@@ -1,0 +1,61 @@
+@import "../../_settings/variables";
+
+.menu-hamburger {
+    display: block;
+    position: absolute;
+    top: 25px;
+    right: 8px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+
+    .hamburger {
+        display: block;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        top: -7px;
+        left: -5px;
+        cursor: pointer;
+        opacity: 0;
+        z-index: 2;
+
+        &:checked~.hamburger-line {
+            opacity: 1;
+            transform: rotate(-50deg) translate(-2px, -1px);
+            background: $white;
+
+            &:nth-last-child(2) {
+                opacity: 0;
+                transform: rotate(0deg) scale(0.2, 0.2);
+            }
+
+            &:nth-last-child(3) {
+                transform: rotate(50deg) translate(0, -1px);
+            }
+        }
+    }
+
+    .hamburger-line {
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+        background: $white;
+        border-radius: 3px;
+        z-index: 1;
+        transform-origin: 4px 0px;
+        transition: transform 0.5s cubic-bezier(.8, .5, .2, 1.4),
+            background 0.5s cubic-bezier(.8, .5, .2, 1.4),
+            opacity 0.55s ease;
+
+        &:first-child {
+            transform-origin: 0% 0%;
+        }
+
+        &:nth-last-child(2) {
+            transform-origin: 0% 100%;
+        }
+    }
+}

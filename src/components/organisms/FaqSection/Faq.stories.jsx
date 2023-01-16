@@ -2,7 +2,7 @@ import React from "react";
 import { FaqSection } from ".";
 
 export default {
-	title: "section",
+	title: "Organisms",
 	component: FaqSection,
 };
 

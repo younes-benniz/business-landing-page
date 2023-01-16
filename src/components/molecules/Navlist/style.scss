@@ -1,11 +1,37 @@
 @import "../../_settings/variables";
 
-.nav-list {
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	max-width: 100%;
-	height: auto;
-	list-style: none;
-	// .nav-item { }
+.nav-menu {
+	.nav-list {
+		list-style: none;
+	}
+
+	.nav-list-desktop {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		max-width: 100%;
+		height: auto;
+	}
+
+	.nav-list-mobile {
+		position: fixed;
+		width: 60%;
+		height: calc(100vh - 70px);
+		top: 70px;
+		// left: -100%;
+		background-color: $blue;
+		text-align: center;
+		transition: all 0.5s;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		padding: 10px 10px;
+		z-index: 2;
+
+		.nav-item {
+			padding: 15px 10px;
+		}
+
+	}
 }

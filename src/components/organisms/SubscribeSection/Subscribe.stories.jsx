@@ -2,7 +2,7 @@ import React from "react";
 import { SubscribeSection } from ".";
 
 export default {
-	title: "section",
+	title: "Organisms",
 	component: SubscribeSection,
 };
 

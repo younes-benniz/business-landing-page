@@ -2,7 +2,7 @@ import React from "react";
 import { PricingSection } from ".";
 
 export default {
-	title: "section",
+	title: "Organisms",
 	component: PricingSection,
 };
 

@@ -2,7 +2,7 @@ import React from "react";
 import { TeamSection } from ".";
 
 export default {
-	title: "section/Team",
+	title: "Organisms",
 	component: TeamSection,
 };
 

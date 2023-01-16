@@ -13,7 +13,7 @@ export const Logo = ({ brand, size, link, imgSrc, hasImg, hasTxt, ...props }) =>
 
 Logo.propTypes = {
 	brand: PropTypes.string,
-	size: PropTypes.oneOf(["medium", "large"]),
+	size: PropTypes.oneOf(["small", "medium", "large"]),
 	link: PropTypes.string,
 	imgSrc: PropTypes.string,
 	hasImg: PropTypes.bool,
