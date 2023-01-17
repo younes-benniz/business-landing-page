@@ -39,5 +39,5 @@ AboutSection.defaultProps = {
 	title: "Top Marketing Agency & Consult Your Website With Us",
 	description:
 		"Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti voluptatibus temporibus suscipit ex modi placeat repudiandae tenetur in illum assumenda! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolor rerum maxime sunt soluta illum doloribus, repellendus aperiam? Quos, obcaecati amet. Eum odit illum adipisci rerum accusantium modi voluptatem sapiente.",
-	button: <Button />,
+	button: <Button label="Learn more" />,
 };
