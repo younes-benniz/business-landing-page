@@ -5,6 +5,7 @@ import { StackSection } from "./components/organisms/StackSection";
 import { FeaturesSection } from "./components/organisms/FeaturesSection";
 import { AboutSection } from "./components/organisms/AboutSection";
 import { PricingSection } from "./components/organisms/PricingSection";
+import { TeamSection } from "./components/organisms/TeamSection";
 
 function App() {
 	return (
@@ -15,6 +16,7 @@ function App() {
 			<StackSection />
 			<FeaturesSection />
 			<PricingSection />
+			<TeamSection />
 		</div>
 	);
 }

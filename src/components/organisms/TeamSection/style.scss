@@ -46,3 +46,53 @@
 		}
 	}
 }
+
+@media screen and (max-width: 992px) {
+	.team-section {
+		.team-section-title {
+			text-align: center;
+			text-transform: capitalize;
+			font-size: 24px;
+			margin-bottom: 20px;
+		}
+		.team-section-description {
+			text-align: center;
+			color: rgb(153, 153, 153);
+			margin-bottom: 45px;
+		}
+		.team-members {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			width: 90%;
+			.member {
+				// border: 1px solid $blue;
+				width: 300px;
+				padding: 10px;
+				text-align: center;
+				.member-img {
+					width: 150px;
+					height: 150px;
+					object-fit: cover;
+					border-radius: 100px;
+					margin-bottom: 25px;
+				}
+				.member-name {
+					font-size: 20px;
+					margin-bottom: 10px;
+				}
+				.member-role {
+					font-size: 12px;
+					font-weight: 500;
+					color: $pink;
+				}
+				.social-links {
+					margin-top: 20px;
+					display: flex;
+					justify-content: center;
+				}
+			}
+		}
+	}
+}
