@@ -4,7 +4,7 @@ import { HeroSection } from "./components/organisms/HeroSection";
 import { StackSection } from "./components/organisms/StackSection";
 import { FeaturesSection } from "./components/organisms/FeaturesSection";
 import { AboutSection } from "./components/organisms/AboutSection";
-import MediaQuery from "react-responsive";
+import { PricingSection } from "./components/organisms/PricingSection";
 
 function App() {
 	return (
@@ -14,6 +14,7 @@ function App() {
 			<AboutSection />
 			<StackSection />
 			<FeaturesSection />
+			<PricingSection />
 		</div>
 	);
 }
