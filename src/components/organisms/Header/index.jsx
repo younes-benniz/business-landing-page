@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import { Logo } from "../../atoms/Logo";
 import { Button } from "../../atoms/Button";
-import { Navlist } from "../Navlist";
+import { Navlist } from "../../molecules/Navlist";
 import { MenuHamburger } from "../../atoms/MenuHamburger";
 import { useMediaQuery } from "react-responsive";
 import Breakpoints from "../../Breakpoints";

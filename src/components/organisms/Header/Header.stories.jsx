@@ -2,7 +2,7 @@ import React from "react";
 import { Header } from ".";
 import { Logo } from "../../atoms/Logo";
 import { Button } from "../../atoms/Button";
-import { Navlist } from "../Navlist";
+import { Navlist } from "../../molecules/Navlist";
 
 export default {
 	title: "Molecules/Header",
