@@ -1,65 +1,64 @@
 @import "../../_settings/variables";
 
 .faq-section {
+	.faq-section-title {
+		text-align: center;
+		margin-bottom: 1.5rem;
+	}
 
-    .faq-section-title {
-        text-align: center;
-        margin-bottom: 1.5rem;
-    }
+	.faq-section-description {
+		text-align: center;
+		margin-bottom: 3rem;
+	}
 
-    .faq-section-description {
-        text-align: center;
-        margin-bottom: 3rem;
-    }
+	.questions-wrapper {
+		transition: all 0.7s ease;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 30px;
 
-    .questions-wrapper {
-        transition: all 0.7s ease;
+		.question-card {
+			width: 65%;
+			margin: 0 auto;
+			border: 1px solid $blue;
+			padding: 20px 10px;
+			border-radius: 15px;
+			background-color: $grey-200;
 
-        .question-card {
-            width: 65%;
-            margin: 0 auto;
-            border: 1px solid $blue;
-            padding: 20px 10px;
-            border-radius: 15px;
-            background-color: $grey-200;
+			&.active {
+				.question-wrapper {
+					.question {
+						color: $light-blue;
+					}
+				}
+			}
 
+			.question-wrapper {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
 
-            &.active {
-                .question-wrapper {
-                    .question {
-                        color: $light-blue;
-                    }
-                }
-            }
+				img {
+					cursor: pointer;
+				}
 
-            .question-wrapper {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
+				.question {
+					flex-basis: 85%;
+					font-size: 16px;
+					font-weight: 500;
+					line-height: 24px;
+				}
+			}
 
-                img {
-                    cursor: pointer;
-                }
+			.answer-wrapper {
+				padding: 15px 15px 0 15px;
 
-                .question {
-                    flex-basis: 85%;
-                    font-size: 16px;
-                    font-weight: 500;
-                    line-height: 24px;
-                }
-            }
-
-            .answer-wrapper {
-                padding: 15px 15px 0 15px;
-
-                .answer {
-                    line-height: 24px;
-                }
-            }
-
-
-        }
-    }
-
-
+				.answer {
+					line-height: 24px;
+				}
+			}
+		}
+	}
 }

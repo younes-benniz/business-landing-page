@@ -1,0 +1,39 @@
+import React, { useState } from "react";
+import { SvgIcon } from "../../atoms/SvgIcon";
+import PropTypes from "prop-types";
+import "./style.scss";
+
+export const Accordion = ({ question, answer, ...props }) => {
+	const [isOpen, setIsOpen] = useState(false);
+	return (
+		<div className={`accordion-card ${isOpen ? "active" : ""}`}>
+			<div className="question-wrapper">
+				<SvgIcon
+					svgSrc={process.env.PUBLIC_URL + "/question.svg"}
+					size="small"
+					hasText={false}
+					isLink={false}
+				/>
+				<p className="question">{question}</p>
+				<SvgIcon
+					svgSrc={process.env.PUBLIC_URL + `/arrow-${isOpen ? "up" : "down"}.svg`}
+					size="small"
+					hasText={false}
+					isLink={false}
+					onClick={() => setIsOpen(!isOpen)}
+				/>
+			</div>
+
+			{isOpen && (
+				<div className="answer-wrapper">
+					<p className="answer">{answer}</p>
+				</div>
+			)}
+		</div>
+	);
+};
+
+Accordion.defaultProps = {
+	question: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.?",
+	answer: "veritatis in dolores incidunt consequuntur? Lorem ipsum dolor sit ametconsectetur adipisicing elit. In ab minima ratione, magnam perspiciatis ullam!",
+};
