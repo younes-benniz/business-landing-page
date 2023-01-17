@@ -12,6 +12,8 @@ function App() {
 			<Header />
 			<HeroSection />
 			<AboutSection />
+			<StackSection />
+			<FeaturesSection />
 		</div>
 	);
 }
