@@ -1,32 +1,35 @@
 import React from "react";
-import PropTypes from "prop-types";
+import { FooterNav } from "../../molecules/FooterNav";
+import { SvgIcon } from "../../atoms/SvgIcon";
 import "./style.scss";
 
 export const Footer = ({ ...props }) => {
+	const socialMedia = ["twitter", "instagram", "linkedin", "facebook", "whatsapp"];
 	return (
 		<footer className="footer">
 			<div className="columns">
 				<div className="social-column">
-					<h3>our Social networks</h3>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+					<h3 className="social-title">our Social networks</h3>
+					<p className="social-description">
+						Lorem ipsum dolor sit amet consectetur adipisicing.
+					</p>
+					<div className="social-icons">
+						{socialMedia.map((social) => (
+							<SvgIcon
+								svgSrc={process.env.PUBLIC_URL + `/${social}.svg`}
+								hasText={false}
+								isLink={false}
+								size="x-small"
+								key={social}
+							/>
+						))}
+					</div>
 				</div>
-				<div className="quick-links-column">
-					<h3>Quick links</h3>
-					<ul>
-						<li>item 1</li>
-						<li>item 2</li>
-						<li>item 3</li>
-						<li>item 4</li>
-					</ul>
+				<div className="useful-links">
+					<FooterNav title="Useful Links" />
 				</div>
-				<div className="servies-column">
-					<h3>Services</h3>
-					<ul>
-						<li>item 1</li>
-						<li>item 2</li>
-						<li>item 3</li>
-						<li>item 4</li>
-					</ul>
+				<div className="our-services">
+					<FooterNav title="Our Services" />
 				</div>
 			</div>
 			<div className="copyright">

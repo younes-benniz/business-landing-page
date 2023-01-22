@@ -1,0 +1,26 @@
+@import "../../_settings/variables";
+
+.footer-nav {
+	.nav-title {
+		color: $white;
+		border-bottom: 3px solid #3abdea;
+		border-bottom-left-radius: 10px;
+		padding-bottom: 6px;
+		padding-left: 10px;
+		margin-bottom: 20px;
+	}
+	.nav-list {
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		.nav-item {
+			color: $white;
+			text-transform: capitalize;
+			margin-bottom: 15px;
+			padding-left: 10px;
+			-webkit-transition: 0.5s all ease;
+			-moz-transition: 0.5s all ease;
+			transition: 0.5s all ease;
+		}
+	}
+}

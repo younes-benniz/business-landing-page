@@ -1,23 +1,47 @@
 @import "../../_settings/variables";
 
 .footer {
-    color: $white;
-    background-color: $primary-blue;
+	.columns {
+		background-color: $primary-blue;
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		margin: 0 auto;
+		padding: 40px 90px;
+		.social-column {
+			flex-basis: 40%;
+			.social-title {
+				font-size: 20px;
+				text-transform: capitalize;
+				margin-bottom: 10px;
+				color: $white;
+			}
+			.social-description {
+				margin-bottom: 10px;
+				line-height: 28px;
+				color: $white;
+			}
+			.social-icons {
+				width: 60%;
+				display: flex;
+				justify-content: space-between;
+				margin-top: 20px;
+			}
+		}
+		.useful-links {
+			flex-basis: 20%;
+		}
+		.our-services {
+			flex-basis: 20%;
+		}
+	}
 
-    .columns {
-        display: flex;
-        justify-content: space-between;
-        width: 75%;
-        margin: 0 auto;
-        padding: 40px 20px;
-    }
-
-    .copyright {
-        display: flex;
-        width: 80%;
-        margin: 0 auto;
-        justify-content: space-between;
-        background-color: $purple-200;
-        padding: 25px 5px;
-    }
+	.copyright {
+		display: flex;
+		width: 100%;
+		margin: 0 auto;
+		justify-content: space-between;
+		background-color: $purple-200;
+		padding: 25px 90px;
+	}
 }
