@@ -17,6 +17,34 @@ export const ContactSection = ({ ...props }) => {
 				<div className="details">
 					<ContactDetail />
 					<ContactDetail />
+					<ContactDetail />
+					<div
+						className="mapouter"
+						style={{
+							position: "relative",
+							textAlign: "right",
+							height: 500,
+							width: 352,
+						}}
+					>
+						<div className="gmap_canvas">
+							<iframe
+								id="gmap_canvas"
+								title="map"
+								src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"
+								frameborder="0"
+								scrolling="no"
+								marginheight="0"
+								marginwidth="0"
+								style={{
+									overflow: "hidden",
+									background: "none",
+									height: 300,
+									width: 400,
+								}}
+							></iframe>
+						</div>
+					</div>
 				</div>
 				<div className="contact-form">
 					<div className="name-email-wrapper">
