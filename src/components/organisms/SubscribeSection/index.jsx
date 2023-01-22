@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import "./style.scss";
-import { Button } from "../../atoms/Button";
+import { SubscribeForm } from "../../molecules/SubscribeForm";
 
 export const SubscribeSection = ({ ...props }) => {
 	return (
@@ -10,10 +10,7 @@ export const SubscribeSection = ({ ...props }) => {
 			<p className="subscribe-section-description">
 				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, libero?
 			</p>
-			<div className="subscribe-form">
-				<input className="subscribe-form-email" type="email" />
-				<Button mode="primary" size="large" label="Subscribe" />
-			</div>
+			<SubscribeForm buttonTxt={"Subscribe"} />
 		</section>
 	);
 };

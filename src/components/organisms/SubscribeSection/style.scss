@@ -1,34 +1,13 @@
 @import "../../_settings/variables";
 
-
 .subscribe-section {
-    .subscribe-section-title {
-        text-align: center;
-        margin-bottom: 2rem;
-    }
+	.subscribe-section-title {
+		text-align: center;
+		margin-bottom: 2rem;
+	}
 
-    .subscribe-section-description {
-        text-align: center;
-        margin-bottom: 4rem;
-    }
-
-    .subscribe-form {
-        text-align: center;
-
-        .subscribe-form-email {
-            width: 400px;
-            height: 44px;
-            border-radius: 25px;
-            padding: 10px 20px;
-            border-color: red;
-            font-size: 18px;
-            letter-spacing: 1.2px;
-
-            &:focus {
-                outline: 0;
-            }
-        }
-    }
-
-
+	.subscribe-section-description {
+		text-align: center;
+		margin-bottom: 4rem;
+	}
 }

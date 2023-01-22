@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import "./style.scss";
 import { SvgIcon } from "../../atoms/SvgIcon";
 import { Button } from "../../atoms/Button";
+import { ContactDetail } from "../../molecules/ContactDetail";
 
 export const ContactSection = ({ ...props }) => {
 	return (
@@ -14,21 +15,8 @@ export const ContactSection = ({ ...props }) => {
 			</p>
 			<div className="contact-wrapper">
 				<div className="details">
-					<div className="location">
-						<div className="icon">
-							<SvgIcon
-								svgSrc={process.env.PUBLIC_URL + "/map.svg"}
-								size="small"
-								isLink={false}
-								hasText={false}
-							/>
-						</div>
-
-						<div className="detail">
-							<h4>Location:</h4>
-							<p>Lorem ipsum dolor sit.</p>
-						</div>
-					</div>
+					<ContactDetail />
+					<ContactDetail />
 				</div>
 				<div className="contact-form">
 					<div className="name-email-wrapper">

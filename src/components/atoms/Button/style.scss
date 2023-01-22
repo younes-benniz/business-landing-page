@@ -28,6 +28,7 @@
 		padding: 14px 35px;
 	}
 	align-items: center;
+	letter-spacing: 1.2px;
 	appearance: none;
 	background-size: calc(100% + 20px) calc(100% + 20px);
 	border-radius: 100px;
@@ -57,7 +58,7 @@
 
 .button:hover {
 	background-position: -20px -20px;
-	opacity: 0.9;
+	// opacity: 0.9;
 }
 
 .button:focus:not(:active) {
