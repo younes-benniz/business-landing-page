@@ -18,7 +18,7 @@ ContactDetail.defaultProps = {
 	icon: (
 		<SvgIcon
 			svgSrc={process.env.PUBLIC_URL + "/map.svg"}
-			size="small"
+			size="x-small"
 			isLink={false}
 			hasText={false}
 		/>

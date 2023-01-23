@@ -6,11 +6,7 @@
 	gap: 20px;
 	.detail-icon {
 		padding: 10px;
-		background-color: $blue;
 		border-radius: 100%;
-		&:hover {
-			background-color: $light-blue;
-		}
 	}
 	.detail {
 		.detail-title {

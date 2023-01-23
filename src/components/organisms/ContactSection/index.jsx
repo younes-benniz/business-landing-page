@@ -4,8 +4,12 @@ import "./style.scss";
 import { SvgIcon } from "../../atoms/SvgIcon";
 import { Button } from "../../atoms/Button";
 import { ContactDetail } from "../../molecules/ContactDetail";
-
 export const ContactSection = ({ ...props }) => {
+	const details = [
+		{ title: "map", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit." },
+		{ title: "email", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit." },
+		{ title: "phone", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit." },
+	];
 	return (
 		<section className="contact-section">
 			<h1 className="contact-section-title">CONTACT</h1>
@@ -15,16 +19,28 @@ export const ContactSection = ({ ...props }) => {
 			</p>
 			<div className="contact-wrapper">
 				<div className="details">
-					<ContactDetail />
-					<ContactDetail />
-					<ContactDetail />
+					{details.map((detail) => (
+						<ContactDetail
+							key={detail.title}
+							title={detail.title}
+							description={detail.description}
+							icon={
+								<SvgIcon
+									svgSrc={process.env.PUBLIC_URL + `/${detail.title}.svg`}
+									size="small"
+									isLink={false}
+									hasText={false}
+								/>
+							}
+						/>
+					))}
 					<div
 						className="mapouter"
 						style={{
 							position: "relative",
 							textAlign: "right",
-							height: 500,
-							width: 352,
+							height: 250,
+							width: 450,
 						}}
 					>
 						<div className="gmap_canvas">
@@ -32,15 +48,13 @@ export const ContactSection = ({ ...props }) => {
 								id="gmap_canvas"
 								title="map"
 								src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"
-								frameborder="0"
+								frameBorder="0"
 								scrolling="no"
-								marginheight="0"
-								marginwidth="0"
 								style={{
 									overflow: "hidden",
 									background: "none",
-									height: 300,
-									width: 400,
+									height: 250,
+									width: 450,
 								}}
 							></iframe>
 						</div>
@@ -66,7 +80,12 @@ export const ContactSection = ({ ...props }) => {
 						<textarea className="contact-input" rows={8} id="message"></textarea>
 					</div>
 					<div className="button">
-						<Button mode={"primary"} size="large" label={"Send"} />
+						<Button
+							mode={"primary"}
+							size="large"
+							label={"Send"}
+							style={{ width: 150 }}
+						/>
 					</div>
 				</div>
 			</div>
