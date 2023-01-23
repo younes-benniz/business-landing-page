@@ -1,6 +1,10 @@
 @import "../../_settings/variables";
 
 .header {
+	position: sticky;
+	top: 0;
+	width: 100%;
+	z-index: 3;
 	background-image: $hero-background;
 
 	.header-container {
@@ -29,7 +33,5 @@
 			display: flex;
 			justify-content: center;
 		}
-
-
 	}
 }
