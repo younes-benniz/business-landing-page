@@ -5,7 +5,8 @@
 	&.hero-section {
 		background-image: $hero-background;
 		width: 100%;
-		height: calc(100vh - 90px);
+		height: 100vh;
+		padding: 70px 30px 0 30px;
 	}
 	&.about-section {
 		width: 80%;

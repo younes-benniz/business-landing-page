@@ -1,7 +1,7 @@
 @import "../../_settings/variables";
 
 .columns {
-	background-color: $primary-blue;
+	background-color: $darkBluePrimary;
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
@@ -40,6 +40,6 @@
 	width: 100%;
 	margin: 0 auto;
 	justify-content: space-between;
-	background-color: $purple-200;
+	background-color: $purple;
 	padding: 25px 90px;
 }

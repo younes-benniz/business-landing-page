@@ -19,7 +19,7 @@
 		height: calc(100vh - 70px);
 		top: 70px;
 		// left: -100%;
-		background-color: $blue;
+		background-color: $darkBluePrimary;
 		text-align: center;
 		transition: all 0.5s;
 		display: flex;
@@ -32,6 +32,5 @@
 		.nav-item {
 			padding: 15px 10px;
 		}
-
 	}
 }

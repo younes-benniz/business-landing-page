@@ -11,15 +11,24 @@ import "./style.scss";
 export const Header = ({ logo, navlist, button, ...props }) => {
 	const isMobile = useMediaQuery({ maxWidth: 767 });
 	const [navOpened, setNavOpened] = useState(false);
+	const [navbar, setNavbar] = useState(false);
+
+	const addNavbarBackground = () => {
+		window.scrollY >= 500 ? setNavbar(true) : setNavbar(false);
+	};
+	window.addEventListener("scroll", addNavbarBackground);
 
 	return (
-		<div className={`header-container ${isMobile ? "mobile" : ""}`}>
+		<div className={`header-container ${isMobile ? "mobile" : ""} ${navbar ? "sticky" : ""}`}>
 			<div className="logo-wrapper">
-				<Logo size={isMobile ? "small" : "large"} />
+				<Logo size={isMobile ? "small" : "large"} color={`${navbar ? "dark" : "light"}`} />
 			</div>
 
 			<div className="menu">
-				<Navlist style={navOpened ? { left: 0 } : { left: "-100%" }} />
+				<Navlist
+					style={navOpened ? { left: 0 } : { left: "-100%" }}
+					color={`${navbar ? "dark" : "light"}`}
+				/>
 			</div>
 
 			<div className="actions">

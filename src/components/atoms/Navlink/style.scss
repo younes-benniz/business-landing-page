@@ -5,15 +5,47 @@
 	position: relative;
 	font-family: $primary-font;
 	font-size: 18px;
+	font-weight: 500;
 	line-height: 30px;
 	text-decoration: none;
-	color: $white-text;
 	text-transform: capitalize;
+	cursor: pointer;
 	transition: all 0.4s ease;
-
-	&:hover {
-		cursor: pointer;
-		color: $light-blue;
+	padding-bottom: 5px;
+	&.dark {
+		color: $dark-text;
+		&:hover {
+			color: $blueSecondary;
+			&::after {
+				background-color: $blueSecondary;
+			}
+		}
+	}
+	&.light {
+		color: $light-text;
+		&:hover {
+			color: $yellowSecondary;
+			&::after {
+				background-color: $yellowSecondary;
+			}
+		}
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		height: 2px;
+		top: 30px;
+		width: 0;
+		left: 50%;
+		bottom: 0;
+		-webkit-transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+		transform: translateX(-50%);
+		-webkit-transition: 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+		transition: 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+	}
+	&:hover::after {
+		width: 100%;
 	}
 
 	&:active {

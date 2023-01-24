@@ -2,9 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./style.scss";
 
-export const Navlink = ({ label, link, ...props }) => {
+export const Navlink = ({ label, link, mode, ...props }) => {
 	return (
-		<span className="nav-link" {...props}>
+		<span className={`nav-link ${mode}`} {...props}>
 			{label}
 		</span>
 	);
@@ -12,11 +12,13 @@ export const Navlink = ({ label, link, ...props }) => {
 
 Navlink.propTypes = {
 	label: PropTypes.string,
+	mode: PropTypes.oneOf(["dark", "light"]),
 	link: PropTypes.string,
 	onClick: PropTypes.func,
 };
 
 Navlink.defaultProps = {
+	mode: "dark",
 	label: "Home",
 	link: "/#",
 };

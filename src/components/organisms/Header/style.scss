@@ -1,17 +1,25 @@
 @import "../../_settings/variables";
 
 .header-container {
-	position: sticky;
-	top: 0;
+	position: absolute;
 	width: 100%;
-	z-index: 3;
-	background-image: $hero-background;
+	background-color: transparent;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 90px;
-	padding: 0 20px;
-
+	height: 110px;
+	padding: 0 60px;
+	transition: all 0.5s ease-out;
+	overflow: hidden;
+	&.sticky {
+		position: fixed;
+		height: 70px;
+		padding: 0 50px;
+		top: 0;
+		z-index: 3;
+		background-color: $navbarBackground;
+		backdrop-filter: blur(20px);
+	}
 	&.mobile {
 		width: 90%;
 		height: 70px;
@@ -19,11 +27,11 @@
 	}
 
 	.logo-wrapper {
-		flex-basis: 20%;
+		flex-basis: 35%;
 	}
 
 	.menu {
-		flex-basis: 50%;
+		flex-basis: 45%;
 	}
 
 	.actions {

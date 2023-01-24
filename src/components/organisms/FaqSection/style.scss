@@ -21,10 +21,10 @@
 	.question-card {
 		width: 65%;
 		margin: 0 auto;
-		border: 1px solid $blue;
+		border: 1px solid $darkBluePrimary;
 		padding: 20px 10px;
 		border-radius: 15px;
-		background-color: $grey-200;
+		background-color: $greyPrimary;
 
 		&.active {
 			.question-wrapper {
