@@ -1,0 +1,30 @@
+@import "../../_settings/variables";
+
+.section {
+	padding: 50px 0px;
+	&.hero-section {
+		background-image: $hero-background;
+		width: 100%;
+		height: calc(100vh - 90px);
+	}
+	&.about-section {
+		width: 80%;
+		display: flex;
+		margin: 0 auto;
+		gap: 50px;
+		padding: 60px 10px;
+	}
+	&.features-section {
+		position: relative;
+		padding: 60px 10px;
+	}
+	&.pricing-section {
+		position: relative;
+		width: 100%;
+		overflow: hidden;
+	}
+	&.technology-section {
+		padding: 15px;
+		background-color: transparent;
+	}
+}

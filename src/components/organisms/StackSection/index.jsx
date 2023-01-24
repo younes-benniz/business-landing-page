@@ -4,30 +4,28 @@ import "./style.scss";
 
 export const StackSection = ({ size, stacks, ...props }) => {
 	return (
-		<section className="tech-stack">
-			<div className="stack-wrapper">
-				<div className="stack stack-1">
-					{stacks.map((stack) => (
-						<img
-							src={stack.src}
-							className={`stack-img stack-img-${size}`}
-							alt={stack.name}
-							key={stack.name}
-						/>
-					))}
-				</div>
-				<div className="stack stack-2">
-					{stacks.map((stack) => (
-						<img
-							src={stack.src}
-							className={`stack-img stack-img-${size}`}
-							alt={stack.name}
-							key={stack.name}
-						/>
-					))}
-				</div>
+		<div className="stack-wrapper">
+			<div className="stack stack-1">
+				{stacks.map((stack) => (
+					<img
+						src={stack.src}
+						className={`stack-img stack-img-${size}`}
+						alt={stack.name}
+						key={stack.name}
+					/>
+				))}
 			</div>
-		</section>
+			<div className="stack stack-2">
+				{stacks.map((stack) => (
+					<img
+						src={stack.src}
+						className={`stack-img stack-img-${size}`}
+						alt={stack.name}
+						key={stack.name}
+					/>
+				))}
+			</div>
+		</div>
 	);
 };
 

@@ -1,11 +1,10 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { Button } from "../../atoms/Button";
 import "./style.scss";
 
 export const PricingSection = ({ ...props }) => {
 	return (
-		<section className="pricing-section">
+		<>
 			<h1 className="section-title">Choose the plan that fits for your team</h1>
 			<p className="section-description">
 				Deploy your sites to global infrastructure in seconds. No credit card required
@@ -99,6 +98,6 @@ export const PricingSection = ({ ...props }) => {
 					</div>
 				</div>
 			</div>
-		</section>
+		</>
 	);
 };

@@ -11,12 +11,27 @@ import { FaqSection } from "./components/organisms/FaqSection";
 import { ContactSection } from "./components/organisms/ContactSection";
 import { SubscribeSection } from "./components/organisms/SubscribeSection";
 import { Footer } from "./components/organisms/Footer";
+import { HomeTemplate } from "./components/templates/HomeTemplate";
 
 function App() {
 	return (
 		<div className="App">
-			<Header />
-			<HeroSection />
+			<HomeTemplate
+				header={<Header />}
+				hero={<HeroSection />}
+				about={<AboutSection />}
+				contact={<ContactSection />}
+				faq={<FaqSection />}
+				features={<FeaturesSection />}
+				pricing={<PricingSection />}
+				technology={<StackSection />}
+				subscribe={<SubscribeSection />}
+				team={<TeamSection />}
+				testimonial={<TestimonialsSection />}
+				footer={<Footer />}
+			/>
+			{/* <Header /> */}
+			{/* <HeroSection />
 			<AboutSection />
 			<StackSection />
 			<FeaturesSection />
@@ -26,7 +41,7 @@ function App() {
 			<FaqSection />
 			<ContactSection />
 			<SubscribeSection />
-			<Footer />
+			<Footer /> */}
 		</div>
 	);
 }

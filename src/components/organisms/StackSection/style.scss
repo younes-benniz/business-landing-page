@@ -1,46 +1,41 @@
 @import "../../_settings/variables";
 
-.tech-stack {
-	padding: 15px;
-	background-color: transparent;
+.stack-wrapper {
+	position: relative;
+	width: 100%;
+	height: 120px;
+	overflow-x: hidden;
+}
 
-	.stack-wrapper {
-		position: relative;
-		width: 100%;
-		height: 120px;
-		overflow-x: hidden;
-	}
+.stack {
+	width: inherit;
+	height: inherit;
+	position: absolute;
+	left: 0%;
+	top: 0%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
 
-	.stack {
-		width: inherit;
-		height: inherit;
-		position: absolute;
-		left: 0%;
-		top: 0%;
-		display: flex;
-		align-items: center;
-		justify-content: space-around;
-	}
+.stack-1 {
+	animation: primary 10s linear infinite;
+}
 
-	.stack-1 {
-		animation: primary 10s linear infinite;
-	}
+.stack-2 {
+	animation: secondary 10s linear infinite;
+}
 
-	.stack-2 {
-		animation: secondary 10s linear infinite;
-	}
+.stack-img-small {
+	width: 70px;
+}
 
-	.stack-img-small {
-		width: 70px;
-	}
+.stack-img-medium {
+	width: 100px;
+}
 
-	.stack-img-medium {
-		width: 100px;
-	}
-
-	.stack-img-large {
-		width: 150px;
-	}
+.stack-img-large {
+	width: 150px;
 }
 
 @keyframes primary {

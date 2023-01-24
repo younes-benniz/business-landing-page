@@ -6,7 +6,7 @@ import "./style.scss";
 export const Footer = ({ ...props }) => {
 	const socialMedia = ["twitter", "instagram", "linkedin", "facebook", "whatsapp"];
 	return (
-		<footer className="footer">
+		<>
 			<div className="columns">
 				<div className="social-column">
 					<h3 className="social-title">our Social networks</h3>
@@ -36,6 +36,6 @@ export const Footer = ({ ...props }) => {
 				<p>© 2023 Copyright</p>
 				<p>made by: Younes</p>
 			</div>
-		</footer>
+		</>
 	);
 };

@@ -1,47 +1,45 @@
 @import "../../_settings/variables";
 
-.footer {
-	.columns {
-		background-color: $primary-blue;
-		display: flex;
-		justify-content: space-between;
-		width: 100%;
-		margin: 0 auto;
-		padding: 40px 90px;
-		.social-column {
-			flex-basis: 40%;
-			.social-title {
-				font-size: 20px;
-				text-transform: capitalize;
-				margin-bottom: 10px;
-				color: $white;
-			}
-			.social-description {
-				margin-bottom: 10px;
-				line-height: 28px;
-				color: $white;
-			}
-			.social-icons {
-				width: 60%;
-				display: flex;
-				justify-content: space-between;
-				margin-top: 20px;
-			}
+.columns {
+	background-color: $primary-blue;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin: 0 auto;
+	padding: 40px 90px;
+	.social-column {
+		flex-basis: 40%;
+		.social-title {
+			font-size: 20px;
+			text-transform: capitalize;
+			margin-bottom: 10px;
+			color: $white;
 		}
-		.useful-links {
-			flex-basis: 20%;
+		.social-description {
+			margin-bottom: 10px;
+			line-height: 28px;
+			color: $white;
 		}
-		.our-services {
-			flex-basis: 20%;
+		.social-icons {
+			width: 60%;
+			display: flex;
+			justify-content: space-between;
+			margin-top: 20px;
 		}
 	}
+	.useful-links {
+		flex-basis: 20%;
+	}
+	.our-services {
+		flex-basis: 20%;
+	}
+}
 
-	.copyright {
-		display: flex;
-		width: 100%;
-		margin: 0 auto;
-		justify-content: space-between;
-		background-color: $purple-200;
-		padding: 25px 90px;
-	}
+.copyright {
+	display: flex;
+	width: 100%;
+	margin: 0 auto;
+	justify-content: space-between;
+	background-color: $purple-200;
+	padding: 25px 90px;
 }

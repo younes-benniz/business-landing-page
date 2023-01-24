@@ -9,24 +9,22 @@ export const HeroSection = ({ heroImg, title, description, ...props }) => {
 	const isMobile = useMediaQuery({ maxWidth: 767 });
 
 	return (
-		<section className="hero-section">
-			<div className="hero-wrapper">
-				<div className="content">
-					<h1 className="hero-title">{title}</h1>
-					<p className="hero-description">{description}</p>
-					<div className="hero-actions">
-						<Button mode="secondary" size="extra-large" />
+		<div className="hero-wrapper">
+			<div className="content">
+				<h1 className="hero-title">{title}</h1>
+				<p className="hero-description">{description}</p>
+				<div className="hero-actions">
+					<Button mode="secondary" size="extra-large" />
 
-						<SvgIcon size={isMobile ? "small" : "medium"} />
-					</div>
-				</div>
-				<div className="image">
-					<div className="hero-image-wrapper">
-						<img src={heroImg} className="hero-image" alt="vido-icon" />
-					</div>
+					<SvgIcon size={isMobile ? "small" : "medium"} />
 				</div>
 			</div>
-		</section>
+			<div className="image">
+				<div className="hero-image-wrapper">
+					<img src={heroImg} className="hero-image" alt="vido-icon" />
+				</div>
+			</div>
+		</div>
 	);
 };
 

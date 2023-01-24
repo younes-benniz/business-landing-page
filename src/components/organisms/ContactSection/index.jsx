@@ -11,7 +11,7 @@ export const ContactSection = ({ ...props }) => {
 		{ title: "phone", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit." },
 	];
 	return (
-		<section className="contact-section">
+		<>
 			<h1 className="contact-section-title">CONTACT</h1>
 			<p className="contact-section-description">
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae quaerat facilis
@@ -89,6 +89,6 @@ export const ContactSection = ({ ...props }) => {
 					</div>
 				</div>
 			</div>
-		</section>
+		</>
 	);
 };

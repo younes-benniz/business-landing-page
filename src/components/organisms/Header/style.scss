@@ -1,37 +1,34 @@
 @import "../../_settings/variables";
 
-.header {
+.header-container {
 	position: sticky;
 	top: 0;
 	width: 100%;
 	z-index: 3;
 	background-image: $hero-background;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 90px;
+	padding: 0 20px;
 
-	.header-container {
+	&.mobile {
+		width: 90%;
+		height: 70px;
+		padding: 0 25px 0 10px;
+	}
+
+	.logo-wrapper {
+		flex-basis: 20%;
+	}
+
+	.menu {
+		flex-basis: 50%;
+	}
+
+	.actions {
+		flex-basis: 15%;
 		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		height: 90px;
-		padding: 0 20px;
-
-		&.mobile {
-			width: 90%;
-			height: 70px;
-			padding: 0 25px 0 10px;
-		}
-
-		.logo-wrapper {
-			flex-basis: 20%;
-		}
-
-		.menu {
-			flex-basis: 50%;
-		}
-
-		.actions {
-			flex-basis: 15%;
-			display: flex;
-			justify-content: center;
-		}
+		justify-content: center;
 	}
 }

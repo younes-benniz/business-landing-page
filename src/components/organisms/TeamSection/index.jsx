@@ -6,7 +6,7 @@ import "./style.scss";
 export const TeamSection = ({ ...props }) => {
 	const arr = [1, 2, 3, 4];
 	return (
-		<section className="team-section">
+		<>
 			<div className="team-section-title">
 				<h2 className="title">Meet our expert Team</h2>
 			</div>
@@ -47,6 +47,6 @@ export const TeamSection = ({ ...props }) => {
 					</div>
 				))}
 			</div>
-		</section>
+		</>
 	);
 };

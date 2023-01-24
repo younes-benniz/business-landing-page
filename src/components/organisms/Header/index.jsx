@@ -13,24 +13,22 @@ export const Header = ({ logo, navlist, button, ...props }) => {
 	const [navOpened, setNavOpened] = useState(false);
 
 	return (
-		<header className="header">
-			<div className={`header-container ${isMobile ? "mobile" : ""}`}>
-				<div className="logo-wrapper">
-					<Logo size={isMobile ? "small" : "large"} />
-				</div>
-
-				<div className="menu">
-					<Navlist style={navOpened ? { left: 0 } : { left: "-100%" }} />
-				</div>
-
-				<div className="actions">
-					<Button mode={"secondary"} size={isMobile ? "small" : "large"} />
-				</div>
-				<Breakpoints.Mobile>
-					<MenuHamburger onClick={() => setNavOpened(!navOpened)} />
-				</Breakpoints.Mobile>
+		<div className={`header-container ${isMobile ? "mobile" : ""}`}>
+			<div className="logo-wrapper">
+				<Logo size={isMobile ? "small" : "large"} />
 			</div>
-		</header>
+
+			<div className="menu">
+				<Navlist style={navOpened ? { left: 0 } : { left: "-100%" }} />
+			</div>
+
+			<div className="actions">
+				<Button mode={"secondary"} size={isMobile ? "small" : "large"} />
+			</div>
+			<Breakpoints.Mobile>
+				<MenuHamburger onClick={() => setNavOpened(!navOpened)} />
+			</Breakpoints.Mobile>
+		</div>
 	);
 };
 

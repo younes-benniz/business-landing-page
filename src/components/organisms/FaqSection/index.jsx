@@ -5,7 +5,7 @@ import { Accordion } from "../../molecules/Accordion";
 
 export const FaqSection = ({ ...props }) => {
 	return (
-		<section className="faq-section">
+		<>
 			<h1 className="faq-section-title">Frequently Asked questions</h1>
 			<p className="faq-section-description">
 				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, veniam!
@@ -14,6 +14,6 @@ export const FaqSection = ({ ...props }) => {
 				<Accordion />
 				<Accordion />
 			</div>
-		</section>
+		</>
 	);
 };

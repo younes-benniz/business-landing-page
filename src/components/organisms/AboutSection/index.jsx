@@ -5,7 +5,7 @@ import "./style.scss";
 
 export const AboutSection = ({ sectionTitle, title, description, button, ...props }) => {
 	return (
-		<section className="about-section">
+		<>
 			<div className="img-wrapper">
 				<img
 					className="company-img"
@@ -23,7 +23,7 @@ export const AboutSection = ({ sectionTitle, title, description, button, ...prop
 				<div className="description">{description}</div>
 				<div className="about-button">{button}</div>
 			</div>
-		</section>
+		</>
 	);
 };
 

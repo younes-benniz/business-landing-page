@@ -7,7 +7,7 @@ import { SvgIcon } from "../../atoms/SvgIcon";
 
 export const TestimonialsSection = ({ ...props }) => {
 	return (
-		<section className="testimonial-section">
+		<>
 			<h1 className="testimonial-title">What Our Clients Say</h1>
 			<p className="testimonial-description">
 				our clients send us a bunch of smiles for our services and we love them
@@ -205,6 +205,6 @@ export const TestimonialsSection = ({ ...props }) => {
 					</div>
 				</div>
 			</Carousel>
-		</section>
+		</>
 	);
 };
