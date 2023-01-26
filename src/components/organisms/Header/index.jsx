@@ -9,12 +9,14 @@ import Breakpoints from "../../Breakpoints";
 import "./style.scss";
 
 export const Header = ({ logo, navlist, button, ...props }) => {
-	const isMobile = useMediaQuery({ maxWidth: 767 });
+	const isMobile = useMediaQuery({ maxWidth: 768 });
 	const [navOpened, setNavOpened] = useState(false);
 	const [navbar, setNavbar] = useState(false);
-
+	const [menuToggleColor, setMenuToggleColor] = useState("light");
 	const addNavbarBackground = () => {
+		setNavOpened(false);
 		window.scrollY >= 500 ? setNavbar(true) : setNavbar(false);
+		window.scrollY <= 500 ? setMenuToggleColor("light") : setMenuToggleColor("dark");
 	};
 	window.addEventListener("scroll", addNavbarBackground);
 
@@ -30,12 +32,14 @@ export const Header = ({ logo, navlist, button, ...props }) => {
 					color={`${navbar ? "dark" : "light"}`}
 				/>
 			</div>
+			<Breakpoints.Desktop>
+				<div className="actions">
+					<Button mode={"secondary"} size={isMobile ? "small" : "large"} />
+				</div>
+			</Breakpoints.Desktop>
 
-			<div className="actions">
-				<Button mode={"secondary"} size={isMobile ? "small" : "large"} />
-			</div>
 			<Breakpoints.Mobile>
-				<MenuHamburger onClick={() => setNavOpened(!navOpened)} />
+				<MenuHamburger onClick={() => setNavOpened(!navOpened)} color={menuToggleColor} />
 			</Breakpoints.Mobile>
 		</div>
 	);

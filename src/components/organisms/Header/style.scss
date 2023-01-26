@@ -11,6 +11,7 @@
 	padding: 0 60px;
 	transition: all 0.5s ease-out;
 	overflow: hidden;
+	z-index: 3;
 	&.sticky {
 		position: fixed;
 		height: 70px;
@@ -21,9 +22,8 @@
 		backdrop-filter: blur(20px);
 	}
 	&.mobile {
-		width: 90%;
 		height: 70px;
-		padding: 0 25px 0 10px;
+		padding: 22px;
 	}
 
 	.logo-wrapper {
@@ -38,5 +38,38 @@
 		flex-basis: 15%;
 		display: flex;
 		justify-content: center;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	.header-container {
+		// &.sticky {
+		// 	position: fixed;
+		// 	height: 70px;
+		// 	padding: 0 50px;
+		// 	top: 0;
+		// 	z-index: 3;
+		// 	background-color: $navbarBackground;
+		// 	backdrop-filter: blur(20px);
+		// }
+		// &.mobile {
+		// 	width: 90%;
+		// 	height: 70px;
+		// 	padding: 0 25px 0 10px;
+		// }
+
+		// .logo-wrapper {
+		// 	flex-basis: 35%;
+		// }
+
+		// .menu {
+		// 	flex-basis: 45%;
+		// }
+
+		// .actions {
+		// 	flex-basis: 15%;
+		// 	display: flex;
+		// 	justify-content: center;
+		// }
 	}
 }

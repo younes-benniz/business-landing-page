@@ -14,7 +14,11 @@ export const Navlist = ({ items, style, color, ...props }) => {
 			>
 				{items.map((item) => (
 					<li className="nav-item" key={item}>
-						<Navlink label={item} link={`#${item}`} mode={color} />
+						<Navlink
+							label={item}
+							link={`#${item}`}
+							mode={`${isDesktop ? color : "dark"}`}
+						/>
 					</li>
 				))}
 			</ul>

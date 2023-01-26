@@ -6,7 +6,7 @@ import { useMediaQuery } from "react-responsive";
 import "./style.scss";
 
 export const HeroSection = ({ heroImg, title, description, ...props }) => {
-	const isMobile = useMediaQuery({ maxWidth: 767 });
+	const isMobile = useMediaQuery({ maxWidth: 325 });
 
 	return (
 		<div className="hero-wrapper">
@@ -14,9 +14,9 @@ export const HeroSection = ({ heroImg, title, description, ...props }) => {
 				<h1 className="hero-title">{title}</h1>
 				<p className="hero-description">{description}</p>
 				<div className="hero-actions">
-					<Button mode="secondary" size="extra-large" />
+					<Button mode="secondary" size={isMobile ? "large" : "extra-large"} />
 
-					<SvgIcon size={isMobile ? "small" : "medium"} />
+					<SvgIcon size={isMobile ? "x-small" : "medium"} />
 				</div>
 			</div>
 			<div className="image">
