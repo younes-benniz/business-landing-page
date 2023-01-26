@@ -21,7 +21,7 @@ export const HeroSection = ({ heroImg, title, description, ...props }) => {
 			</div>
 			<div className="image">
 				<div className="hero-image-wrapper">
-					<img src={heroImg} className="hero-image" alt="vido-icon" />
+					<img src={heroImg} className="hero-image" alt="hero-img" />
 				</div>
 			</div>
 		</div>
