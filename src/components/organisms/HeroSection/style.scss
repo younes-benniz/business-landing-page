@@ -35,6 +35,8 @@
 		.hero-image-wrapper {
 			.hero-image {
 				width: 500px;
+				width: 100%;
+				height: auto;
 			}
 		}
 	}
@@ -84,9 +86,6 @@
 				margin-top: 50px;
 			}
 		}
-		.image .hero-image-wrapper .hero-image {
-			width: 270px;
-		}
 	}
 }
 
@@ -102,10 +101,6 @@
 				font-size: 25px;
 			}
 		}
-
-		.image .hero-image-wrapper .hero-image {
-			width: 290px;
-		}
 	}
 }
 
@@ -120,10 +115,6 @@
 				font-size: 28px;
 			}
 		}
-
-		.image .hero-image-wrapper .hero-image {
-			width: 380px;
-		}
 	}
 }
 @media only screen and (min-width: 375px) and (max-width: 425px) {
@@ -136,10 +127,6 @@
 			.hero-description {
 				font-size: 20px;
 			}
-		}
-
-		.image .hero-image-wrapper .hero-image {
-			width: 320px;
 		}
 	}
 }

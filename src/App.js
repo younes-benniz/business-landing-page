@@ -19,10 +19,10 @@ function App() {
 			<HomeTemplate
 				header={<Header />}
 				hero={<HeroSection />}
-				// about={<AboutSection />}
+				about={<AboutSection />}
 				// contact={<ContactSection />}
 				// faq={<FaqSection />}
-				// features={<FeaturesSection />}
+				features={<FeaturesSection />}
 				// pricing={<PricingSection />}
 				// technology={<StackSection />}
 				// subscribe={<SubscribeSection />}

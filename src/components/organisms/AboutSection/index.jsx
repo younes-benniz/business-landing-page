@@ -5,7 +5,7 @@ import "./style.scss";
 
 export const AboutSection = ({ sectionTitle, title, description, button, ...props }) => {
 	return (
-		<>
+		<div className="about-wrapper">
 			<div className="img-wrapper">
 				<img
 					className="company-img"
@@ -20,10 +20,12 @@ export const AboutSection = ({ sectionTitle, title, description, button, ...prop
 				<div className="about-title">
 					<h2>{title}</h2>
 				</div>
-				<div className="description">{description}</div>
+				<div className="description">
+					<p>{description}</p>
+				</div>
 				<div className="about-button">{button}</div>
 			</div>
-		</>
+		</div>
 	);
 };
 
@@ -39,5 +41,5 @@ AboutSection.defaultProps = {
 	title: "Top Marketing Agency & Consult Your Website With Us",
 	description:
 		"Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti voluptatibus temporibus suscipit ex modi placeat repudiandae tenetur in illum assumenda! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolor rerum maxime sunt soluta illum doloribus, repellendus aperiam? Quos, obcaecati amet. Eum odit illum adipisci rerum accusantium modi voluptatem sapiente.",
-	button: <Button label="Learn more" />,
+	button: <Button size="extra-large" label="Learn more" />,
 };
