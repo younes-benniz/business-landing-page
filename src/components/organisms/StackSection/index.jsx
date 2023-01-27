@@ -1,31 +1,39 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { SectionTitle } from "../../atoms/SectionTitle";
 import "./style.scss";
 
 export const StackSection = ({ size, stacks, ...props }) => {
 	return (
-		<div className="stack-wrapper">
-			<div className="stack stack-1">
-				{stacks.map((stack) => (
-					<img
-						src={stack.src}
-						className={`stack-img stack-img-${size}`}
-						alt={stack.name}
-						key={stack.name}
-					/>
-				))}
+		<>
+			<SectionTitle
+				title="technology Stack"
+				description="discover our technology stack that we use"
+				style={{ marginBottom: 0 }}
+			/>
+			<div className="stack-wrapper">
+				<div className="stack stack-1">
+					{stacks.map((stack) => (
+						<img
+							src={stack.src}
+							className={`stack-img stack-img-${size}`}
+							alt={stack.name}
+							key={stack.name}
+						/>
+					))}
+				</div>
+				<div className="stack stack-2">
+					{stacks.map((stack) => (
+						<img
+							src={stack.src}
+							className={`stack-img stack-img-${size}`}
+							alt={stack.name}
+							key={stack.name}
+						/>
+					))}
+				</div>
 			</div>
-			<div className="stack stack-2">
-				{stacks.map((stack) => (
-					<img
-						src={stack.src}
-						className={`stack-img stack-img-${size}`}
-						alt={stack.name}
-						key={stack.name}
-					/>
-				))}
-			</div>
-		</div>
+		</>
 	);
 };
 

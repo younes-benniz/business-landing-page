@@ -24,7 +24,7 @@ function App() {
 				// faq={<FaqSection />}
 				features={<FeaturesSection />}
 				// pricing={<PricingSection />}
-				// technology={<StackSection />}
+				technology={<StackSection />}
 				// subscribe={<SubscribeSection />}
 				// team={<TeamSection />}
 				// testimonial={<TestimonialsSection />}
