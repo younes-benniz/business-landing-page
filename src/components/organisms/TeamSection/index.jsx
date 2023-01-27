@@ -1,52 +1,86 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { SvgIcon } from "../../atoms/SvgIcon";
+import { SectionTitle } from "../../atoms/SectionTitle";
 import "./style.scss";
 
-export const TeamSection = ({ ...props }) => {
-	const arr = [1, 2, 3, 4];
+export const TeamSection = ({ team, ...props }) => {
 	return (
 		<>
-			<div className="team-section-title">
-				<h2 className="title">Meet our expert Team</h2>
-			</div>
-			<div className="team-section-description">
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, accusamus!</p>
-			</div>
-
+			<SectionTitle
+				title="Meet our expert Team"
+				description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, accusamus!"
+			/>
 			<div className="team-members">
-				{arr.map((num) => (
-					<div className="member" key={num}>
-						<img
-							className="member-img"
-							src={process.env.PUBLIC_URL + "/team-member.jpg"}
-							alt="team-member"
-						/>
-						<h3 className="member-name">John Doe</h3>
-						<p className="member-role">Front-end dev</p>
+				{team.map((member) => (
+					<div className="member" key={member.name.replace(" ", "_")}>
+						<img className="member-img" src={member.imgUrl} alt="team-member" />
+						<h3 className="member-name">{member.name}</h3>
+						<p className="member-role">{member.role}</p>
 						<div className="social-links">
-							<SvgIcon
-								hasText={false}
-								isLink={true}
-								svgSrc={process.env.PUBLIC_URL + "/email.svg"}
-								size="x-small"
-							/>
-							<SvgIcon
-								hasText={false}
-								isLink={true}
-								svgSrc={process.env.PUBLIC_URL + "/linkedin.svg"}
-								size="x-small"
-							/>
-							<SvgIcon
-								hasText={false}
-								isLink={true}
-								svgSrc={process.env.PUBLIC_URL + "/twitter.svg"}
-								size="x-small"
-							/>
+							{member.soicalMedia.map((social) => (
+								<SvgIcon
+									key={social.name}
+									hasText={false}
+									isLink={true}
+									link={social.url}
+									svgSrc={process.env.PUBLIC_URL + `/${social.name}.svg`}
+									size="x-small"
+								/>
+							))}
 						</div>
 					</div>
 				))}
 			</div>
 		</>
 	);
+};
+
+TeamSection.propTypes = {
+	team: PropTypes.arrayOf(PropTypes.object),
+};
+
+TeamSection.defaultProps = {
+	team: [
+		{
+			name: "John Doe",
+			imgUrl: process.env.PUBLIC_URL + "/team-member.jpg",
+			role: "front-end dev",
+			soicalMedia: [
+				{ name: "twitter", url: "#" },
+				{ name: "linkedin", url: "#" },
+				{ name: "email", url: "#" },
+			],
+		},
+		{
+			name: "alex hernandes",
+			imgUrl: process.env.PUBLIC_URL + "/team-member.jpg",
+			role: "back-end dev",
+			soicalMedia: [
+				{ name: "twitter", url: "#" },
+				{ name: "linkedin", url: "#" },
+				{ name: "email", url: "#" },
+			],
+		},
+		{
+			name: "John Doe",
+			imgUrl: process.env.PUBLIC_URL + "/team-member.jpg",
+			role: "front-end dev",
+			soicalMedia: [
+				{ name: "twitter", url: "#" },
+				{ name: "linkedin", url: "#" },
+				{ name: "email", url: "#" },
+			],
+		},
+		{
+			name: "alex hernandes",
+			imgUrl: process.env.PUBLIC_URL + "/team-member.jpg",
+			role: "back-end dev",
+			soicalMedia: [
+				{ name: "twitter", url: "#" },
+				{ name: "linkedin", url: "#" },
+				{ name: "email", url: "#" },
+			],
+		},
+	],
 };
