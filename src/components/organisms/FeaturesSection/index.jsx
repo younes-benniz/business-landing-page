@@ -1,29 +1,33 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { SectionTitle } from "../../atoms/SectionTitle";
 import "./style.scss";
 
 export const FeaturesSection = ({ features, ...props }) => {
 	return (
-		<div className="features-wrapper">
-			{features.map((feature) => (
-				<div className="feature-item" key={feature.number}>
-					<div
-						className="feature-number"
-						style={{
-							backgroundImage: `url(${process.env.PUBLIC_URL} /features-number-${feature.number}.png)`,
-						}}
-					>
-						<h6>{feature.number}</h6>
+		<>
+			<SectionTitle title="features" />
+			<div className="features-wrapper">
+				{features.map((feature) => (
+					<div className="feature-item" key={feature.number}>
+						<div
+							className="feature-number"
+							style={{
+								backgroundImage: `url(${process.env.PUBLIC_URL} /features-number-${feature.number}.png)`,
+							}}
+						>
+							<h6>{feature.number}</h6>
+						</div>
+						<div className="feature-icon">
+							<img src={feature.icon} alt="feture-icon" />
+						</div>
+						<h4 className="feature-titile">{feature.title}</h4>
+						<div className="line"></div>
+						<p className="feature-description">{feature.description}</p>
 					</div>
-					<div className="feature-icon">
-						<img src={feature.icon} alt="feture-icon" />
-					</div>
-					<h4 className="feature-titile">{feature.title}</h4>
-					<div className="line"></div>
-					<p className="feature-description">{feature.description}</p>
-				</div>
-			))}
-		</div>
+				))}
+			</div>
+		</>
 	);
 };
 
