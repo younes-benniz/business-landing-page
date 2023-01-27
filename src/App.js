@@ -21,7 +21,7 @@ function App() {
 				hero={<HeroSection />}
 				about={<AboutSection />}
 				// contact={<ContactSection />}
-				// faq={<FaqSection />}
+				faq={<FaqSection />}
 				features={<FeaturesSection />}
 				// pricing={<PricingSection />}
 				technology={<StackSection />}

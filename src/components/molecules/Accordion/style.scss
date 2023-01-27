@@ -1,7 +1,8 @@
 @import "../../_settings/variables";
 
 .accordion-card {
-	width: 65%;
+	max-width: 100%;
+	width: 100%;
 	margin: 0 auto;
 	border: 1px solid $darkBluePrimary;
 	padding: 20px 10px;

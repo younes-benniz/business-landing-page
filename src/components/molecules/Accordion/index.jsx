@@ -13,6 +13,7 @@ export const Accordion = ({ question, answer, ...props }) => {
 					size="small"
 					hasText={false}
 					isLink={false}
+					style={{ alignSelf: "start" }}
 				/>
 				<p className="question">{question}</p>
 				<SvgIcon
@@ -20,6 +21,7 @@ export const Accordion = ({ question, answer, ...props }) => {
 					size="small"
 					hasText={false}
 					isLink={false}
+					style={{ alignSelf: "start" }}
 					onClick={() => setIsOpen(!isOpen)}
 				/>
 			</div>

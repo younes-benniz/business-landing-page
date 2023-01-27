@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./style.scss";
 
-export const SvgIcon = ({ svgSrc, size, hasText, isLink, text, link, ...props }) => {
+export const SvgIcon = ({ svgSrc, size, hasText, isLink, text, link, style, ...props }) => {
 	const imgElem = (
 		<>
 			<img className={`icon icon-${size}`} src={svgSrc} alt="icon" {...props} />
@@ -10,7 +10,7 @@ export const SvgIcon = ({ svgSrc, size, hasText, isLink, text, link, ...props })
 		</>
 	);
 	return (
-		<div className="icon-wrapper">
+		<div className="icon-wrapper" style={style}>
 			{isLink ? (
 				<a href={link} className="icon-link">
 					{imgElem}
