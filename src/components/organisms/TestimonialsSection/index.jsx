@@ -1,17 +1,17 @@
 import React from "react";
-import PropTypes from "prop-types";
-import "./style.scss";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import { SvgIcon } from "../../atoms/SvgIcon";
+import { SectionTitle } from "../../atoms/SectionTitle";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import "./style.scss";
 
 export const TestimonialsSection = ({ ...props }) => {
 	return (
 		<>
-			<h1 className="testimonial-title">What Our Clients Say</h1>
-			<p className="testimonial-description">
-				our clients send us a bunch of smiles for our services and we love them
-			</p>
+			<SectionTitle
+				title="What Our Clients Say"
+				description="our clients send us a bunch of smiles for our services and we love them"
+			/>
 			<Carousel
 				showArrows={true}
 				infiniteLoop={true}
