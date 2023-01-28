@@ -13,7 +13,7 @@ export const TeamSection = ({ team, ...props }) => {
 			/>
 			<div className="team-members">
 				{team.map((member) => (
-					<div className="member" key={member.name.replace(" ", "_")}>
+					<div className="member" key={member.name.replace("_", " ")}>
 						<img className="member-img" src={member.imgUrl} alt="team-member" />
 						<h3 className="member-name">{member.name}</h3>
 						<p className="member-role">{member.role}</p>
@@ -63,7 +63,7 @@ TeamSection.defaultProps = {
 			],
 		},
 		{
-			name: "John Doe",
+			name: "John Doee",
 			imgUrl: process.env.PUBLIC_URL + "/team-member.jpg",
 			role: "front-end dev",
 			soicalMedia: [
@@ -73,7 +73,7 @@ TeamSection.defaultProps = {
 			],
 		},
 		{
-			name: "alex hernandes",
+			name: "alex hernandess",
 			imgUrl: process.env.PUBLIC_URL + "/team-member.jpg",
 			role: "back-end dev",
 			soicalMedia: [
