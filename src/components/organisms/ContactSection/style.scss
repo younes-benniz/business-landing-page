@@ -1,52 +1,27 @@
 @import "../../_settings/variables";
 
-.contact-section-title {
-	text-align: center;
-	margin-bottom: 1rem;
-}
-
-.contact-section-description {
-	text-align: center;
-	width: 70%;
-	margin: 0 auto;
-	margin-bottom: 3rem;
-}
-
 .contact-wrapper {
 	display: flex;
 	justify-content: space-around;
-	width: 90%;
-	margin: 0 auto;
-
+	width: 100%;
+	overflow: hidden;
 	.details {
 		display: flex;
 		flex-direction: column;
 		gap: 40px;
 		align-self: flex-start;
-		width: 35%;
-		padding: 15px;
-
-		.location {
-			display: flex;
-
-			.icon {
-				margin-right: 10px;
-			}
-
-			.detail {
-				display: flex;
-				flex-direction: column;
-			}
-		}
+		max-width: 400px;
+		width: 100%;
 	}
-
 	.contact-form {
 		display: flex;
 		flex-direction: column;
+		align-self: center;
 		padding: 30px 20px;
-		width: 55%;
-		background-color: $greyPrimary;
-
+		max-width: 600px;
+		width: 100%;
+		background-color: $greenPrimary;
+		border-radius: 10px;
 		.contact-input {
 			letter-spacing: 1.8px;
 			box-shadow: none;
@@ -57,18 +32,17 @@
 			padding: 5px 10px;
 			font-weight: 400;
 			line-height: 1.5;
-			color: #212529;
-			background-color: #fff;
-			background-clip: padding-box;
-			border: 1px solid #ced4da;
+			color: $black-200;
+			background-color: $white-200;
+			border: 1px solid $grey-text;
 			-webkit-appearance: none;
 			-moz-appearance: none;
 			appearance: none;
-			transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-
-			&:focus {
+			transition: border-color 0.5s ease-in-out, box-shadow 0.15s ease-in-out;
+			&:focus,
+			&:active {
 				outline: 0;
-				border-color: #47b2e4;
+				border-color: $light-blue;
 				box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 			}
 		}
@@ -78,51 +52,55 @@
 			width: 100%;
 			justify-content: space-between;
 			margin-bottom: 2rem;
-
 			.name,
 			.email {
 				display: flex;
 				flex-direction: column;
-
 				input {
 					height: 44px;
 				}
 			}
-
 			.name {
 				width: 48%;
-
 				label {
 					font-size: 18px;
 					padding-bottom: 8px;
 				}
 			}
-
 			.email {
 				width: 48%;
-
 				label {
 					font-size: 18px;
 					padding-bottom: 8px;
 				}
 			}
 		}
-
 		.subject,
 		.message {
 			display: flex;
 			flex-direction: column;
 			margin-bottom: 2rem;
-
 			label {
 				padding-bottom: 8px;
 			}
 		}
-
 		.subject {
 			input {
 				height: 44px;
 			}
+		}
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.contact-wrapper {
+		flex-direction: column-reverse;
+		gap: 40px;
+		.details {
+			align-self: center;
+		}
+		.contact-form {
+			max-width: 450px;
 		}
 	}
 }

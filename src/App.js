@@ -20,28 +20,16 @@ function App() {
 				header={<Header />}
 				hero={<HeroSection />}
 				about={<AboutSection />}
-				// contact={<ContactSection />}
+				contact={<ContactSection />}
 				faq={<FaqSection />}
 				features={<FeaturesSection />}
 				// pricing={<PricingSection />}
 				technology={<StackSection />}
 				// subscribe={<SubscribeSection />}
-				// team={<TeamSection />}
+				team={<TeamSection />}
 				// testimonial={<TestimonialsSection />}
 				// footer={<Footer />}
 			/>
-			{/* <Header /> */}
-			{/* <HeroSection />
-			<AboutSection />
-			<StackSection />
-			<FeaturesSection />
-			<PricingSection />
-			<TeamSection />
-			<TestimonialsSection />
-			<FaqSection />
-			<ContactSection />
-			<SubscribeSection />
-			<Footer /> */}
 		</div>
 	);
 }

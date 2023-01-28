@@ -4,6 +4,8 @@ import "./style.scss";
 import { SvgIcon } from "../../atoms/SvgIcon";
 import { Button } from "../../atoms/Button";
 import { ContactDetail } from "../../molecules/ContactDetail";
+import { SectionTitle } from "../../atoms/SectionTitle";
+
 export const ContactSection = ({ ...props }) => {
 	const details = [
 		{ title: "map", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit." },
@@ -12,11 +14,12 @@ export const ContactSection = ({ ...props }) => {
 	];
 	return (
 		<>
-			<h1 className="contact-section-title">CONTACT</h1>
-			<p className="contact-section-description">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae quaerat facilis
-				suscipit, alias quos dicta pariatur neque maxime earum.
-			</p>
+			<SectionTitle
+				title="contact"
+				description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae quaerat facilis
+				suscipit, alias quos dicta pariatur neque maxime earum."
+			/>
+
 			<div className="contact-wrapper">
 				<div className="details">
 					{details.map((detail) => (
@@ -40,7 +43,8 @@ export const ContactSection = ({ ...props }) => {
 							position: "relative",
 							textAlign: "right",
 							height: 250,
-							width: 450,
+							maxWidth: 450,
+							width: "100%",
 						}}
 					>
 						<div className="gmap_canvas">
