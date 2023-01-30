@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { SvgIcon } from "../../atoms/SvgIcon";
 import { SectionTitle } from "../../atoms/SectionTitle";
 import { TeamCard } from "../../molecules/TeamCard";
 import "./style.scss";
@@ -15,6 +14,7 @@ export const TeamSection = ({ team, ...props }) => {
 			<div className="team-members">
 				{team.map((member) => (
 					<TeamCard
+						key={member.name.replace(" ", "_")}
 						name={member.name}
 						imgUrl={member.imgUrl}
 						role={member.role}
