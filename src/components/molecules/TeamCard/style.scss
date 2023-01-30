@@ -1,0 +1,41 @@
+@import "../../_settings/variables";
+
+.member {
+	text-align: center;
+	max-width: 340px;
+	width: 100%;
+	padding: 25px 10px;
+	border-radius: 25px;
+	background-color: $contrastBackground;
+	transition: all 0.5s ease;
+	&:hover {
+		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+		transform: translateY(-5px);
+	}
+	.member-img {
+		width: 150px;
+		height: 150px;
+		object-fit: cover;
+		border-radius: 100px;
+		margin-bottom: 25px;
+	}
+	.member-name {
+		font-size: 20px;
+		font-weight: 400;
+		margin-bottom: 10px;
+	}
+	.member-role {
+		font-size: 16px;
+		font-weight: 500;
+		color: $pink;
+	}
+	.member-description {
+		font-size: 14px;
+		margin-top: 10px;
+	}
+	.social-links {
+		margin-top: 20px;
+		display: flex;
+		justify-content: center;
+	}
+}
