@@ -12,6 +12,18 @@
 	transition: all 0.5s ease-out;
 	overflow: hidden;
 	z-index: 3;
+	&.mobile {
+		padding: 22px;
+		height: 70px;
+	}
+	&.mobile-sticky {
+		position: fixed;
+		height: 70px;
+		padding: 22px;
+		top: 0;
+		z-index: 3;
+		background-color: $white-200;
+	}
 	&.sticky {
 		position: fixed;
 		height: 70px;
@@ -20,10 +32,6 @@
 		z-index: 3;
 		background-color: $navbarBackground;
 		backdrop-filter: blur(20px);
-	}
-	&.mobile {
-		height: 70px;
-		padding: 22px;
 	}
 
 	.logo-wrapper {

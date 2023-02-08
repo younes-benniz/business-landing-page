@@ -18,10 +18,17 @@ export const Header = ({ logo, navlist, button, ...props }) => {
 		window.scrollY >= 500 ? setNavbar(true) : setNavbar(false);
 		window.scrollY <= 500 ? setMenuToggleColor("light") : setMenuToggleColor("dark");
 	};
+	const handleHamburgerChange = (event) => {
+		console.log("Navbar is opened:", event.target.checked);
+	};
 	window.addEventListener("scroll", addNavbarBackground);
 
 	return (
-		<div className={`header-container ${isMobile ? "mobile" : ""} ${navbar ? "sticky" : ""}`}>
+		<div
+			className={`header-container ${isMobile ? "mobile" : ""} ${
+				!isMobile && navbar ? "sticky" : ""
+			} ${navbar && isMobile ? "mobile-sticky" : ""}`}
+		>
 			<div className="logo-wrapper">
 				<Logo size={isMobile ? "small" : "large"} color={`${navbar ? "dark" : "light"}`} />
 			</div>
@@ -39,7 +46,12 @@ export const Header = ({ logo, navlist, button, ...props }) => {
 			</Breakpoints.Desktop>
 
 			<Breakpoints.Mobile>
-				<MenuHamburger onClick={() => setNavOpened(!navOpened)} color={menuToggleColor} />
+				<MenuHamburger
+					onClick={() => setNavOpened(!navOpened)}
+					color={menuToggleColor}
+					isChecked={navOpened}
+					onChange={handleHamburgerChange}
+				/>
 			</Breakpoints.Mobile>
 		</div>
 	);
