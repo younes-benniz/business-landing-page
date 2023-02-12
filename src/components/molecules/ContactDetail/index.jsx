@@ -15,14 +15,7 @@ export const ContactDetail = ({ icon, title, description, ...props }) => {
 };
 
 ContactDetail.defaultProps = {
-	icon: (
-		<SvgIcon
-			svgSrc={process.env.PUBLIC_URL + "/map.svg"}
-			size="x-small"
-			isLink={false}
-			hasText={false}
-		/>
-	),
+	icon: <SvgIcon svgSrc={"map.svg"} size="x-small" isLink={false} hasText={false} />,
 	title: "Location:",
 	description: "Lorem ipsum dolor sit amet.",
 };

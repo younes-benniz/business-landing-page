@@ -2,7 +2,6 @@
 
 .features-wrapper {
 	display: flex;
-	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
 	gap: 30px;
@@ -11,22 +10,25 @@
 	margin: 0 auto;
 	border-radius: 25px;
 	border: 1px solid $white;
+
 	.feature-item {
 		text-align: center;
 		max-width: 270px;
 		width: 100%;
 		padding: 20px;
-		height: 450px;
 		border-radius: 25px;
 		background-color: $darkBluePrimary;
 		transition: all 0.5s ease;
+
 		&:hover {
 			transform: translateY(-5px);
 			background-color: $bluePrimary;
 		}
+
 		.feature-icon {
 			margin-bottom: 20px;
 		}
+
 		.feature-titile {
 			font-size: 20px;
 			line-height: 30px;
@@ -35,11 +37,13 @@
 			height: 70px;
 			margin-bottom: 20px;
 		}
+
 		.feature-description {
 			color: $white-100;
 			font-size: 16px;
 			line-height: 30px;
 		}
+
 		.line {
 			width: 100px;
 			height: 2px;
@@ -47,6 +51,7 @@
 			margin: 20px auto;
 			transition: all 0.5s;
 		}
+
 		.feature-number {
 			background-repeat: no-repeat;
 			width: 110px;
@@ -63,6 +68,7 @@
 		}
 	}
 }
+
 @media only screen and (max-width: 768px) {
 	.features-wrapper {
 		gap: 60px;

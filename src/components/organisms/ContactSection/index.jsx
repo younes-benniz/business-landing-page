@@ -8,16 +8,15 @@ import { SectionTitle } from "../../atoms/SectionTitle";
 
 export const ContactSection = ({ ...props }) => {
 	const details = [
-		{ title: "map", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit." },
-		{ title: "email", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit." },
-		{ title: "phone", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit." },
+		{ title: "map", description: "ADRESS" },
+		{ title: "email", description: "contact@techsio.com" },
+		{ title: "phone", description: "+16546846468" },
 	];
 	return (
 		<>
 			<SectionTitle
-				title="contact"
-				description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae quaerat facilis
-				suscipit, alias quos dicta pariatur neque maxime earum."
+				title="Get in touch"
+				description="Connect with Our Team and Discover How We Can Help You Revolutionize Your Workflow."
 			/>
 
 			<div className="contact-wrapper">
@@ -29,7 +28,7 @@ export const ContactSection = ({ ...props }) => {
 							description={detail.description}
 							icon={
 								<SvgIcon
-									svgSrc={process.env.PUBLIC_URL + `/${detail.title}.svg`}
+									svgSrc={`${detail.title}.svg`}
 									size="small"
 									isLink={false}
 									hasText={false}

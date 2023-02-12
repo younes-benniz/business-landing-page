@@ -5,7 +5,13 @@ import "./style.scss";
 export const Logo = ({ brand, size, link, imgSrc, hasImg, hasTxt, color, ...props }) => {
 	return (
 		<a href={link} className={`logo logo-${size}`} {...props}>
-			{hasImg && <img className="logo-img" src={imgSrc} alt={brand + "-logo"} />}
+			{hasImg && (
+				<img
+					className="logo-img"
+					src={process.env.PUBLIC_URL + "/images/" + imgSrc}
+					alt={brand + "-logo"}
+				/>
+			)}
 			{hasTxt && <h1 className={`brand-name ${color}`}>{brand}</h1>}
 		</a>
 	);
@@ -26,7 +32,7 @@ Logo.defaultProps = {
 	brand: "TechSio",
 	size: "large",
 	color: "dark",
-	imgSrc: process.env.PUBLIC_URL + "/robot.svg",
+	imgSrc: "robot.svg",
 	link: "#",
 	hasImg: true,
 	hasTxt: true,

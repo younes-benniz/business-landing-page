@@ -7,8 +7,8 @@ export const SubscribeSection = ({ ...props }) => {
 	return (
 		<>
 			<SectionTitle
-				title="Join our Newsletter"
-				description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, libe"
+				title="Stay Up-to-Date"
+				description="oin Our Newsletter and Receive the Latest Updates, Insights, and Industry Trends Directly to Your Inbox."
 				style={{ marginBottom: "1rem" }}
 			/>
 			<SubscribeForm buttonTxt={"Subscribe"} />

@@ -17,7 +17,7 @@ export const TeamCard = ({ name, imgUrl, role, description, socialMedia }) => {
 						hasText={false}
 						isLink={true}
 						link={social.url}
-						svgSrc={process.env.PUBLIC_URL + `/${social.name}.svg`}
+						svgSrc={`${social.name}.svg`}
 						size="x-small"
 					/>
 				))}
@@ -36,7 +36,7 @@ TeamCard.proprTypes = {
 
 TeamCard.defaultProps = {
 	name: "Jhon Doe",
-	imgUrl: process.env.PUBLIC_URL + "/team-member.jpg",
+	imgUrl: "team-member.jpg",
 	role: "CEO",
 	description: "Former co-founder of Comany x. Early staff at Spotify and Clearbit",
 	socialMedia: [

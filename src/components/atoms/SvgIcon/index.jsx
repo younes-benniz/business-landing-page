@@ -5,7 +5,12 @@ import "./style.scss";
 export const SvgIcon = ({ svgSrc, size, hasText, isLink, text, link, style, ...props }) => {
 	const imgElem = (
 		<>
-			<img className={`icon icon-${size}`} src={svgSrc} alt="icon" {...props} />
+			<img
+				className={`icon icon-${size}`}
+				src={process.env.PUBLIC_URL + "/images/" + svgSrc}
+				alt="icon"
+				{...props}
+			/>
 			{hasText && <span className={`icon-text icon-text-${size}`}>{text}</span>}
 		</>
 	);
@@ -36,7 +41,7 @@ SvgIcon.defaultProps = {
 	hasText: true,
 	isLink: true,
 	link: "/#",
-	svgSrc: process.env.PUBLIC_URL + "/video-stream.svg",
+	svgSrc: "video-stream.svg",
 	size: "large",
 	text: "Watch video!",
 };

@@ -29,7 +29,7 @@ export const PriceCard = ({ title, price, features, isPopular }) => {
 					{features.map((feature) => (
 						<li className="feature-item" key={feature}>
 							<SvgIcon
-								svgSrc={process.env.PUBLIC_URL + "/checked.svg"}
+								svgSrc={"checked.svg"}
 								size={"x-small"}
 								isLink={false}
 								hasText={false}

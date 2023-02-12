@@ -68,7 +68,7 @@ TeamSection.defaultProps = {
 		},
 		{
 			name: "alex hernandess",
-			imgUrl: process.env.PUBLIC_URL + "/team-member.jpg",
+			imgUrl: process.env.PUBLIC_URL + "/images/team-member.jpg",
 			role: "back-end dev",
 			description: "Lorem ipsum dolor sit amet consectetur.dolor sit ",
 			socialMedia: [

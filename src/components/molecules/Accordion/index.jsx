@@ -9,7 +9,7 @@ export const Accordion = ({ question, answer, ...props }) => {
 		<div className={`accordion-card ${isOpen ? "active" : ""}`}>
 			<div className="question-wrapper">
 				<SvgIcon
-					svgSrc={process.env.PUBLIC_URL + "/question.svg"}
+					svgSrc={"question.svg"}
 					size="small"
 					hasText={false}
 					isLink={false}
@@ -17,7 +17,7 @@ export const Accordion = ({ question, answer, ...props }) => {
 				/>
 				<p className="question">{question}</p>
 				<SvgIcon
-					svgSrc={process.env.PUBLIC_URL + `/arrow-${isOpen ? "up" : "down"}.svg`}
+					svgSrc={`arrow-${isOpen ? "up" : "down"}.svg`}
 					size="small"
 					hasText={false}
 					isLink={false}
@@ -33,6 +33,11 @@ export const Accordion = ({ question, answer, ...props }) => {
 			)}
 		</div>
 	);
+};
+
+Accordion.propTypes = {
+	question: PropTypes.string,
+	answer: PropTypes.string,
 };
 
 Accordion.defaultProps = {

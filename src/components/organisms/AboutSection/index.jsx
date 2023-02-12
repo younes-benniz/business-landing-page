@@ -9,7 +9,7 @@ export const AboutSection = ({ sectionTitle, title, description, button, ...prop
 			<div className="img-wrapper">
 				<img
 					className="company-img"
-					src={process.env.PUBLIC_URL + "/business.svg"}
+					src={process.env.PUBLIC_URL + "/images/business.svg"}
 					alt="company"
 				/>
 			</div>

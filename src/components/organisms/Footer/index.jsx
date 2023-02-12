@@ -11,12 +11,13 @@ export const Footer = ({ ...props }) => {
 				<div className="social-column">
 					<h3 className="social-title">our Social networks</h3>
 					<p className="social-description">
-						Lorem ipsum dolor sit amet consectetur adipisicing.
+						Follow Us on Social Media to Stay Informed, Engage with Our Community, and
+						Stay Ahead of the Latest Trends.
 					</p>
 					<div className="social-icons">
 						{socialMedia.map((social) => (
 							<SvgIcon
-								svgSrc={process.env.PUBLIC_URL + `/${social}.svg`}
+								svgSrc={`${social}.svg`}
 								hasText={false}
 								isLink={false}
 								size="x-small"

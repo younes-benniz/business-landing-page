@@ -21,7 +21,11 @@ export const HeroSection = ({ heroImg, title, description, ...props }) => {
 			</div>
 			<div className="image">
 				<div className="hero-image-wrapper">
-					<img src={heroImg} className="hero-image" alt="hero-img" />
+					<img
+						src={process.env.PUBLIC_URL + "/images/" + heroImg}
+						className="hero-image"
+						alt="hero-img"
+					/>
 				</div>
 			</div>
 		</div>
@@ -35,7 +39,7 @@ HeroSection.propTypes = {
 };
 
 HeroSection.defaultProps = {
-	heroImg: process.env.PUBLIC_URL + "./building_websites.svg",
+	heroImg: "building_websites.svg",
 	title: "Better solutions for Your Business",
 	description: "we are a team specialised in digital marketing.",
 };
