@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import "./style.scss";
 import { SvgIcon } from "../../atoms/SvgIcon";
 import { Button } from "../../atoms/Button";

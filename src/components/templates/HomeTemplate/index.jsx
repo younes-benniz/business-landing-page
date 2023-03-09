@@ -17,20 +17,66 @@ export const HomeTemplate = ({
 }) => {
 	return (
 		<>
-			{header && <header className="header">{header}</header>}
-			{hero && <section className="section hero-section">{hero}</section>}
-			{about && <section className="section about-section">{about}</section>}
-			{features && <section className="section features-section">{features}</section>}
-			{pricing && <section className="section pricing-section">{pricing}</section>}
-			{technology && <section className="section technology-section">{technology}</section>}
-			{team && <section className="section team-section">{team}</section>}
-			{testimonial && (
-				<section className="section testimonial-section">{testimonial}</section>
+			{header && (
+				<header id="header" className="header">
+					{header}
+				</header>
 			)}
-			{faq && <section className="section faq-section">{faq}</section>}
-			{contact && <section className="section contact-section">{contact}</section>}
-			{subscribe && <section className="section subscribe-section">{subscribe}</section>}
-			{footer && <footer className="footer">{footer}</footer>}
+			{hero && (
+				<section id="hero" className="section hero-section">
+					{hero}
+				</section>
+			)}
+			{about && (
+				<section id="about" className="section about-section">
+					{about}
+				</section>
+			)}
+			{features && (
+				<section id="features" className="section features-section">
+					{features}
+				</section>
+			)}
+			{pricing && (
+				<section id="pricing" className="section pricing-section">
+					{pricing}
+				</section>
+			)}
+			{technology && (
+				<section id="technology" className="section technology-section">
+					{technology}
+				</section>
+			)}
+			{team && (
+				<section id="team" className="section team-section">
+					{team}
+				</section>
+			)}
+			{testimonial && (
+				<section id="testimonial" className="section testimonial-section">
+					{testimonial}
+				</section>
+			)}
+			{faq && (
+				<section id="faq" className="section faq-section">
+					{faq}
+				</section>
+			)}
+			{contact && (
+				<section id="contact" className="section contact-section">
+					{contact}
+				</section>
+			)}
+			{subscribe && (
+				<section id="subscribe" className="section subscribe-section">
+					{subscribe}
+				</section>
+			)}
+			{footer && (
+				<footer id="footer" className="footer">
+					{footer}
+				</footer>
+			)}
 		</>
 	);
 };

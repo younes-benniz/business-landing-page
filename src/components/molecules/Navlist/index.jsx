@@ -32,5 +32,5 @@ Navlist.propTypes = {
 };
 
 Navlist.defaultProps = {
-	items: ["Home", "contact", "features", "about", "projects", "pricing"],
+	items: ["Home", "about", "features", "pricing", "FAQ", "contact"],
 };

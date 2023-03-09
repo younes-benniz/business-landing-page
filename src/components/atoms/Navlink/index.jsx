@@ -4,9 +4,13 @@ import "./style.scss";
 
 export const Navlink = ({ label, link, mode, ...props }) => {
 	return (
-		<span className={`nav-link ${mode}`} {...props}>
+		<a
+			href={`#${label.toLowerCase() === "home" ? "header" : label.toLowerCase()}`}
+			className={`nav-link ${mode}`}
+			{...props}
+		>
 			{label}
-		</span>
+		</a>
 	);
 };
 
