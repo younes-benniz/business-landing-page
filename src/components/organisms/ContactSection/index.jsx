@@ -1,16 +1,12 @@
 import React from "react";
+import PropTypes from "prop-types";
 import "./style.scss";
 import { SvgIcon } from "../../atoms/SvgIcon";
 import { Button } from "../../atoms/Button";
 import { ContactDetail } from "../../molecules/ContactDetail";
 import { SectionTitle } from "../../atoms/SectionTitle";
 
-export const ContactSection = ({ ...props }) => {
-	const details = [
-		{ title: "map", description: "ADRESS" },
-		{ title: "email", description: "contact@techsio.com" },
-		{ title: "phone", description: "+16546846468" },
-	];
+export const ContactSection = ({ details }) => {
 	return (
 		<>
 			<SectionTitle
@@ -50,8 +46,6 @@ export const ContactSection = ({ ...props }) => {
 								id="gmap_canvas"
 								title="map"
 								src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"
-								frameBorder="0"
-								scrolling="no"
 								style={{
 									overflow: "hidden",
 									background: "none",
@@ -93,4 +87,16 @@ export const ContactSection = ({ ...props }) => {
 			</div>
 		</>
 	);
+};
+
+ContactSection.propTypes = {
+	details: PropTypes.arrayOf(PropTypes.object),
+};
+
+ContactSection.defaultProps = {
+	details: [
+		{ title: "map", description: "ADRESS" },
+		{ title: "email", description: "contact@techsio.com" },
+		{ title: "phone", description: "+11111111111" },
+	],
 };
