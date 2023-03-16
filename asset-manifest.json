@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/business-landing-page/static/css/main.2141d40f.css",
+    "main.js": "/business-landing-page/static/js/main.553e0625.js",
+    "index.html": "/business-landing-page/index.html",
+    "main.2141d40f.css.map": "/business-landing-page/static/css/main.2141d40f.css.map",
+    "main.553e0625.js.map": "/business-landing-page/static/js/main.553e0625.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2141d40f.css",
+    "static/js/main.553e0625.js"
+  ]
+}
